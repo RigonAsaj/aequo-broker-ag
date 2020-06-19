@@ -1,13 +1,433 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    
+    /*background-repeat: no-repeat;
+    background-image: url("/images/slide1.png");
+    background-size: cover;*/ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif , 'Signika';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+
+  .home-page{
+
+    background: #1B8EBD;
+    background-image: url("/images/IMAGE1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    height: 900px;
+    width: 100%;
+    animation: homepage;
+    -moz-animation: homepage;
+    -webkit-animation: homepage;
+    -o-animation: homepage;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    
+
+    
+  }
+
+  @keyframes homepage{
+   0% {background-image: url("/images/IMAGE1.png");}
+   25% {background-image: url("/images/slide2_image.png");}
+   50% {background-image: url("/images/IMAGE1.png");}
+   75% {background-image: url("/images/slide2_image.png");}
+   100% {background-image: url("/images/IMAGE1.png");}
+   
+  }
+
+
+  .link{
+    padding: 8px;
+    color:white;
+    text-decoration: none;
+    height:20px;
+    font: Regular 16px/20px Signika;
+    text-align: left;
+  }
+
+  .link:hover{
+    text-decoration: none;
+    color: #1AE5BE;
+  }
+  
+  span.name-text{
+    color: #1AE5BE;
+    font-size: 35px;
+   
+  }
+
+  span.welcome-text{
+    font-size: 25px;
+
+  }
+
+  .btn-click{
+    text-decoration: none;
+    
+    border-radius: 27px;
+    padding: 8px 18px;
+    background-color: #2196F3;
+    border: 1px solid white;
+    margin-top: 20px;
+    color:white;
+  }
+
+  .description{
+    margin-left: 300px;
+    margin-top: 450px;
+    
+  }
+
+  .logo{
+    margin-left: 190px;
+    margin-top: 40px;
+  }
+
+  .nav-bar{
+    margin-left: 60px;
+    margin-top: 40px;
+
+  }
+
+  .kontakt-page{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+  }
+
+  .kontakt-name{
+    text-align: center;
+   font-size:33px;
+   letter-spacing: 0px;
+   color: #4A4A4A;
+  }
+
+  .kontakt-text{
+    text-align: center;
+    font: Regular 14px/24px Signika;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+    margin-bottom: 63.5px;
+  }
+
+  .kontakt-line{
+    width: 100px;
+    height: 7px;
+    background: #1B8EBD 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    display:inline-block;
+  }
+
+  .kontakt-info{
+    width: 450px;
+    height: 380px;
+    background: #1B4D70 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+
+  .kontakt-form img{
+    margin-bottom: 45px;
+
+  }
+  .kontakt-form input {
+    margin-bottom: 10px;
+    background: #F0F2F6 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    text-align: left;
+    padding-left: 10px; 
+    
+  }
+
+  .kontakt-form textarea{
+    background: #F0F2F6 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    height:135px;
+    text-align: left;
+    padding-left: 10px; 
+  }
+
+ 
+
+  .kontakt-info p {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+  }
+
+  .berater-title{
+    text-align: left;
+    font: SemiBold 18px/22px Signika;
+    letter-spacing: 0px;
+    color: #1B8EBD;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  .berater-text{
+    text-align: left;
+    font: Light 14px/17px Signika;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+  }
+  
+  .service-name{
+    text-align: center;
+    color:#4A4A4A;
+    font-size: 33px;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+
+  .service-text{
+    text-align: center;
+    color:#4A4A4A;
+    font-size: 14px;
+    margin-bottom: 72px;
+  }
+  section::after {
+    content: "";
+  display: table;
+  clear: both;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.service-container{
+  display: block;
+  margin-left: 50px;
+  margin-right: auto;
+  
 }
+
+
+  .berater{
+   width:300px;
+   height:250px;
+   display: inline-block;
+    box-shadow: 5px 10px 18px #888888;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+  .berater:nth-child(1){
+    text-align: left;
+  }
+
+  .berater:hover{
+    top: -10px;
+  }
+  
+
+ .icon{
+  width:300px;
+  height:250px;
+  display: inline-block;
+  box-shadow: 5px 10px 18px #888888;
+  background: #F7F9FC 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+    
+ }
+
+ .icon:hover{
+  top: -10px;
+ }
+
+ .dotedmap{
+
+  width:300px;
+  height:250px;
+  display: inline-block;
+  box-shadow: 5px 10px 18px #888888;
+  background: #F2F3F7 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+ 
+ }
+
+ .dotedmap:hover{
+   top:-10px;
+ }
+
+ .cicero{
+  width:300px;
+  height:250px;
+  display: inline-block;
+  box-shadow: 5px 10px 18px #888888;
+  background: #E9EBF1 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+ 
+ }
+
+ .cicero:hover{
+   top:-10px;
+ }
+
+ .partner-page{
+   background: gray;
+   height: 400px;
+/* background-image: url("/images/family_walking_image.png");*/  
+ }
+.partner-title{
+  text-align: center;
+  font-size: 33px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 27.5px;
+  
+}
+
+.partner-text{
+  text-align: center;
+  margin-bottom: 92px;
+  color: white;
+}
+
+.partner-content{
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.partner{
+  display: inline-block;
+  height: 80px;
+  width: 160px;
+  border:1px solid white;
+  padding: 6px;
+  margin: 3px;
+}
+
+.partner:hover{
+  background: #1B8EBD;
+}
+
+.überuns-page{
+  height:1000px;
+}
+.überuns-title{
+  font-size: 41px;
+  color: #4A4A4A;
+}
+
+.überuns-text{
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.footer-page{
+  height:500px;
+  background-color: #1B8EBD;
+}
+
+.rating-page{
+  background-color: #1B4D70;
+  height:280px;
+  
+}
+
+.rating{
+  text-align: center;
+  padding-top: 140px;
+}
+
+.btn-rate{
+  text-decoration: none;
+  color: white;
+  border-radius: 27px;
+  padding: 8px 18px;
+  background-color: #1B8EBD;
+  border: 1px solid #1B8EBD;
+  
+}
+
+
+.überuns-page{
+  height: 500px;
+}
+
+
+.überuns-title, .überuns-text{
+  text-align: center;
+   color: #4A4A4A
+}
+
+.person-img{
+  display: inline-block;
+}
+
+small{
+  color:#1B8EBD;
+}
+
+
+/*Slider css*/
+
+
+.slider-container{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.card{
+  text-align: center;
+  padding-top: 10px;
+  opacity: 1;
+  width: 200px;
+  color: white;
+}
+
+.card-title{
+  color:black;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom:0 !important ;
+}
+
+.container{
+  margin-top: 100px;
+
+
+}
+
+.rounded-circle{
+  display: block;
+  margin: auto;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #1B8EBD !important;
+
+}
+
+
+
+
+
+
+
+
